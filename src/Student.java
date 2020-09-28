@@ -10,11 +10,10 @@ public class Student implements Comparable<Student> {
 
 	@Override
 	public int compareTo(Student o) {
-		// TODO Auto-generated method stub
-		return 0;
+		return name.compareTo(o.name);
 	}
 	
-	//public String toString()  {
-		
-	//}
+	public String toString()  {
+		return name + " " + score;
+	}
 }
