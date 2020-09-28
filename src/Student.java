@@ -1,5 +1,5 @@
 
-public class Student {
+public class Student implements Comparable<Student> {
 	private String name;
 	private int score;
 	
@@ -7,8 +7,14 @@ public class Student {
 		this.name = name;
 		this.score = score;
 	}
+
+	@Override
+	public int compareTo(Student o) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
 	
-	//public void toString()  {
+	//public String toString()  {
 		
 	//}
 }
