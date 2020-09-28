@@ -1,0 +1,86 @@
+commit ba5116b1b480a2113d3d9bacec2605c5fee49acc
+Author: Mohammed Alnasser <w-r-t-2002@hotmail.com>
+Date:   Mon Sep 28 16:44:52 2020 -0600
+
+    added comments for Student.java
+
+commit 889ac51a01442a02f9613f4b71577933863a5edc
+Author: Alex Kim <amkim@mymail.mines.edu>
+Date:   Mon Sep 28 16:44:19 2020 -0600
+
+    Comments
+
+commit 17b3839ff67d4d340f88c668d34d4efe9495fe62
+Author: Mohammed Alnasser <w-r-t-2002@hotmail.com>
+Date:   Mon Sep 28 16:36:29 2020 -0600
+
+    the project is working
+
+commit dbf6718b2ea1a1bf6f8fe55627299a6c6822f0f7
+Author: Alex Kim <amkim@mymail.mines.edu>
+Date:   Mon Sep 28 16:13:31 2020 -0600
+
+    Added error checking
+
+commit c9d64980fff8dc21362969e8b90ee286f25189e4
+Merge: 978112d 7ed8b39
+Author: Mohammed Alnasser <w-r-t-2002@hotmail.com>
+Date:   Mon Sep 28 15:56:11 2020 -0600
+
+    Merge branch 'master' of https://github.com/amkim1/C10-FileIO
+    fixed merge conflict
+
+commit 7ed8b39b79f145e6a95998e4f668ff1d38eea53a
+Author: Alex Kim <amkim@mymail.mines.edu>
+Date:   Mon Sep 28 15:55:56 2020 -0600
+
+    Hopefully got rid of bin file
+
+commit 978112dfb255f536e6991c85c48958552cd0b197
+Merge: b7f4ef0 07c6378
+Author: Mohammed Alnasser <w-r-t-2002@hotmail.com>
+Date:   Mon Sep 28 15:55:53 2020 -0600
+
+    fixed merge conflict
+
+commit b7f4ef020407f118601f68e6a5fe638f32ac14bd
+Author: Mohammed Alnasser <w-r-t-2002@hotmail.com>
+Date:   Mon Sep 28 15:52:26 2020 -0600
+
+    fixed project not working
+
+commit 07c6378ac32d35e8d2643e6c32768b2d9826c554
+Author: Alex Kim <amkim@mymail.mines.edu>
+Date:   Mon Sep 28 15:48:22 2020 -0600
+
+    Fixed printing
+
+commit 443028a3406d955ce553302b1bb8ad78770fa421
+Author: Mohammed Alnasser <w-r-t-2002@hotmail.com>
+Date:   Mon Sep 28 15:44:14 2020 -0600
+
+    filled loadDataFromFile function
+
+commit 62e100da5e675aceee371b5fdf080c8164430b27
+Author: Mohammed Alnasser <w-r-t-2002@hotmail.com>
+Date:   Mon Sep 28 15:19:18 2020 -0600
+
+    added .gitignore
+
+commit 09121313ab4f776d15642d53b2413798ab12054f
+Author: Alex Kim <amkim@mymail.mines.edu>
+Date:   Mon Sep 28 15:13:42 2020 -0600
+
+    Added methods
+
+commit 5ffcf1f9b686c263dc8ee12810784615af6ad434
+Author: Alex Kim <amkim@mymail.mines.edu>
+Date:   Mon Sep 28 15:06:57 2020 -0600
+
+    Initial  classes
+
+commit f2e249af195498e6b41dbf0419863bc2fc6067af
+Author: Alex Kim <amkim@mymail.mines.edu>
+Date:   Mon Sep 28 14:59:08 2020 -0600
+
+    init commit
