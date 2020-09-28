@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ScoreTrakker {
-	private ArrayList<Student> students;
+	private ArrayList<Student> students = new ArrayList<Student>();
 	
 	public void loadDataFromFile(String fileName) {
 		try {
