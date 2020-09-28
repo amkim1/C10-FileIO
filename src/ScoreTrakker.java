@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class ScoreTrakker {
-	private ArrayList<Student> students;
+	private ArrayList<Student> students = new ArrayList<Student>();
 	
 	public void loadDataFromFile(String fileName) {
 		try {
@@ -12,7 +12,7 @@ public class ScoreTrakker {
 			Scanner scanner = new Scanner(reader);
 			while (scanner.hasNext()) {
 				String[] line =  scanner.nextLine().split(" ");
-				Student student = new Student(line[0] + line[1], Integer.parseInt(line[2]));
+				Student student = new Student(line[0] + " " + line[1], Integer.parseInt(line[2]));
 				students.add(student);
 			}
 			
@@ -25,7 +25,7 @@ public class ScoreTrakker {
 	
 	public void printInOrder() {
 		for (Student student : students) {
-			student.toString();
+			System.out.println(student.toString());
 		}
 	}
 	
