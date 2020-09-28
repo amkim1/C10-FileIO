@@ -2,6 +2,7 @@ import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.util.ArrayList;
 import java.util.Scanner;
+import java.util.Collections;
 
 public class ScoreTrakker {
 	private ArrayList<Student> students = new ArrayList<Student>();
@@ -12,23 +13,28 @@ public class ScoreTrakker {
 		FileReader reader = new FileReader(fileName);
 		Scanner scanner = new Scanner(reader);
 		while (scanner.hasNext()) {
-			String[] line =  scanner.nextLine().split(" ");
+			String name =  scanner.nextLine();
+			String score = scanner.nextLine();
 			try {
-				Student student = new Student(line[0] + " " + line[1], Integer.parseInt(line[2]));
+				Student student = new Student(name, Integer.parseInt(score));
 				students.add(student);
 			}
 			catch(NumberFormatException e) {
-				System.out.println("Incorrect format for " + line[0] + " " + line[1] + " not a valid score: " + line[2] );
+				System.out.println("Incorrect format for " + name + " not a valid score: " + score );
+				System.out.println();
 			}
 		}
-
+		
 
 	}
 
 	public void printInOrder() {
+		Collections.sort(students);
+		System.out.println("Student Score List");
 		for (Student student : students) {
 			System.out.println(student.toString());
 		}
+		System.out.println();
 	}
 
 	public void processFiles() {
@@ -36,15 +42,18 @@ public class ScoreTrakker {
 			try {
 				loadDataFromFile(file);
 				printInOrder();
-			} catch(FileNotFoundException e) {
+				students.removeAll(students);
+				
+			} catch (FileNotFoundException e) {
 				System.out.println("Can't open file: " + file);
+				System.out.println();
 			}
 		}
+		
 	}
 
 	public static void main(String[] args) {
 		ScoreTrakker trakker = new ScoreTrakker();
-		System.out.println("Student Score List");
 		trakker.processFiles();
 	}
 }
